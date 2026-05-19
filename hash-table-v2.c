@@ -97,7 +97,7 @@ void hash_table_v2_add_entry(struct hash_table_v2 *hash_table,
 	list_entry->value = value;
 	SLIST_INSERT_HEAD(list_head, list_entry, pointers);
 
-	int err = pthread_mutex_unlock(&hash_table->lock);
+	err = pthread_mutex_unlock(&hash_table->lock);
 	if (err != 0) { 
 		exit(err);
 	}

@@ -11,15 +11,16 @@ make
 ## Running
 ```shell
 TODO how to run and results
-./hash-table-tester -t 8 -s 50000
+./hash-table-tester -t 4 -s 50000
 ```
+*Used -t 4 since computer has maximum 4 cores to operate
 Results:
-Generation: 146,634 usec
-Hash table base: 1,827,811 usec
+Generation: 71,618 usec
+Hash table base: 455,627 usec
 - 0 missing
-Hash table v1: 10,134,325 usec
+Hash table v1: 1,748,388 usec
 - 0 missing
-Hash table v2: 9,689,007 usec
+Hash table v2: 166,023 usec
 - 0 missing
 
 ## First Implementation
